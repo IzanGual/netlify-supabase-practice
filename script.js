@@ -8,5 +8,5 @@ document.getElementById('fetchData').addEventListener('click', async () => {
 
     const data = await response.json();
     const container = document.getElementById('dataContainer');
-    container.innerHTML = JSON.stringify(data);
+    container.innerHTML = JSON.stringify(data, null, 2);
 });
