@@ -1,7 +1,7 @@
 // Supabase configuration
 const supabaseUrl = 'https://czfghywpmezemmtfdiyw.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN6ZmdoeXdwbWV6ZW1tdGZkaXl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzczNjU4ODcsImV4cCI6MjA1Mjk0MTg4N30.KYxp-j3NFHvlxyRzFjq6HmT4Q_s12fRriYzCsmfRQYg';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 // DOM Elements
 const emailInput = document.getElementById('email');
